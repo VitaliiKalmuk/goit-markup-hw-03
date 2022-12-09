@@ -30,9 +30,8 @@ ul {
 }
 
 .container {
-  width: 1128px;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 1158px;
+  margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -53,18 +52,19 @@ body {
 
 /* --- HEADER --- */
 
-.conteiner {
+.container {
   width: 1158px;
+  margin: 0 auto;
 }
 
 .header {
   background: var(--color-white);
+
 }
 
 .header-block {
   display: flex;
   align-items: center;
-  justify-content: ;
 }
 
 .header-logo {
@@ -79,6 +79,8 @@ body {
   color: var(--color-primary-text);
   text-decoration: none;
   margin-right: 77px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .header-nav {
@@ -185,6 +187,8 @@ body {
   background: var(--color-primary-text);
   padding-top: 192px;
   padding-bottom: 192px;
+  width: 1400px;
+  margin: 0 auto;
 }
 
 .order-title {
@@ -292,16 +296,13 @@ body {
   margin-bottom: 120px;
 }
 
-.work-image {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-}
-
 /* --- TEAM ---- */
 
 .team {
   background: #f4f4fd;
+  width: 1400px;
+  margin: 0 auto;
+  display: flex;
 }
 
 .team-title {
@@ -326,6 +327,12 @@ body {
   display: block;
 }
 
+.team-member-block {
+  background: var(--color-white);
+  width: 264px;
+  margin: auto;
+}
+
 .team-member {
   font-weight: 700;
   font-size: 20px;
@@ -336,6 +343,8 @@ body {
   flex: none;
   order: 0;
   flex-grow: 0;
+  padding-top: 32px;
+  margin-bottom: 8px;
 }
 
 .team-job {
@@ -344,6 +353,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--color-secondary-text);
+  padding-bottom: 32px;
 }
 
 /* --------------- P O R T F O L I O---------------- */
@@ -429,6 +439,9 @@ body {
   background: var(--color-primary-text);
   padding-top: 100px;
   padding-bottom: 100px;
+  width: 1400px;
+  margin: 0 auto;
+  padding-left: 156px;
 }
 
 .footer-logo {
@@ -445,7 +458,7 @@ body {
   order: 1;
   flex-grow: 0;
   text-decoration: none;
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .footer-logo > span {
@@ -465,4 +478,6 @@ body {
   line-height: calc(24 / 16);
   letter-spacing: 0.02em;
   color: #e7e9fc;
+  box-sizing: border-box;
+  max-width: 264px;
 }
