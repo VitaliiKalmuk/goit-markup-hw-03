@@ -249,6 +249,7 @@ body {
   list-style: none;
   padding-left: 0px;
   display: flex;
+
   }
 
 .benefits-list .item {
@@ -363,7 +364,6 @@ border-radius: 0px 0px 4px 4px;
 
 /* ---PRODUCTS---- */
 
-
 .products-list {
   list-style: none;
   display: flex;
@@ -433,6 +433,7 @@ border-radius: 4px;
   row-gap: 48px;
   column-gap: 24px;
   padding-left: 0px;
+  padding-bottom: 120px;
 }
 
 .gallery-list .item:nth-child(3n) {
