@@ -27,6 +27,7 @@ h3,
 p,
 ul {
   margin: 0;
+  padding: 0;
 }
 
 .container {
@@ -34,6 +35,8 @@ ul {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+  width: 1158px;
+  margin: 0 auto;
 }
 
 body {
@@ -52,14 +55,9 @@ body {
 
 /* --- HEADER --- */
 
-.container {
-  width: 1158px;
-  margin: 0 auto;
-}
-
 .header {
   background: var(--color-white);
-  border-bottom: solid 0.5px #F4F4FD;
+  border-bottom: solid 0.5px #f4f4fd;
 }
 
 .header-block {
@@ -184,7 +182,6 @@ body {
   background: var(--color-primary-text);
   padding-top: 192px;
   padding-bottom: 192px;
-  width: 1400px;
   margin: 0 auto;
 }
 
@@ -233,6 +230,11 @@ body {
 
 .benefits {
   padding-top: 120px;
+}
+
+.work,
+.team {
+  padding-top: 120px;
   padding-bottom: 120px;
 }
 
@@ -247,19 +249,12 @@ body {
 
 .benefits-list {
   list-style: none;
-  padding-left: 0px;
   display: flex;
-
-  }
-
-.benefits-list .item {
-  width: 264px;
 }
 
 .benefits-list .item:not(:last-child) {
-padding-right: 24px;
+  margin-right: 24px;
 }
-
 
 .benefits-decription {
   font-size: 16px;
@@ -284,22 +279,17 @@ padding-right: 24px;
 .work-list {
   list-style: none;
   display: flex;
-  margin-bottom: 120px;
-  padding-left: 0px;
 }
 
 .work-list .item:not(:last-child) {
-  padding-right: 24px;
+  margin-right: 24px;
 }
 
 /* --- TEAM ---- */
 
 .team {
   background: #f4f4fd;
-  width: 1400px;
   margin: 0 auto;
-  padding-top: 120px;
-  padding-bottom: 120px;
 }
 
 .team-title {
@@ -316,11 +306,10 @@ padding-right: 24px;
 .team-list {
   list-style: none;
   display: flex;
-  padding-left: 0px;
 }
 
 .team-list .item:not(:last-child) {
-  padding-right: 24px;
+  margin-right: 24px;
 }
 
 .team-avatar {
@@ -333,8 +322,14 @@ padding-right: 24px;
   background: var(--color-white);
   width: 264px;
   margin: auto;
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-text-block {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .team-member {
@@ -347,7 +342,6 @@ border-radius: 0px 0px 4px 4px;
   flex: none;
   order: 0;
   flex-grow: 0;
-  padding-top: 32px;
   margin-bottom: 8px;
 }
 
@@ -357,24 +351,26 @@ border-radius: 0px 0px 4px 4px;
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--color-secondary-text);
-  padding-bottom: 32px;
 }
 
 /* --------------- P O R T F O L I O---------------- */
 
 /* ---PRODUCTS---- */
 
+.products {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
 .products-list {
   list-style: none;
   display: flex;
   justify-content: center;
-  padding-top: 96px;
-  padding-bottom: 72px;
-  padding-left: 0px;
+  margin-bottom: 72px;
 }
 
 .products-list .item:not(:last-child) {
-  padding-right: 24px;
+  margin-right: 24px;
 }
 
 .products-button {
@@ -388,8 +384,8 @@ border-radius: 0px 0px 4px 4px;
   color: var(--color-accent);
   cursor: pointer;
   padding: 8px 16px;
-  border: 1px solid #E7E9FC;
-border-radius: 4px;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
 }
 
 .products-button:hover {
@@ -432,8 +428,6 @@ border-radius: 4px;
   flex-wrap: wrap;
   row-gap: 48px;
   column-gap: 24px;
-  padding-left: 0px;
-  padding-bottom: 120px;
 }
 
 .gallery-list .item:nth-child(3n) {
@@ -444,11 +438,13 @@ border-radius: 4px;
   margin-bottom: 0;
 }
 
-
 .gallery-block {
-  border: 0.5px solid #F4F4FD;
-box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
-width: calc((100 - 48px)/ 3);
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  border: 0.5px solid #f4f4fd;
+  border-top: none;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .gallery-image {
@@ -462,8 +458,6 @@ width: calc((100 - 48px)/ 3);
   line-height: calc(24 / 20);
   letter-spacing: 0.02em;
   color: var(--color-primary-text);
-  padding-top: 32px;
-  padding-left: 16px;
 }
 
 .gallery-product {
@@ -471,9 +465,7 @@ width: calc((100 - 48px)/ 3);
   line-height: calc(24 / 16);
   letter-spacing: 0.02em;
   color: var(--color-secondary-text);
-  padding-top: 8px;
-  padding-left: 16px;
-  padding-bottom: 32px;
+  margin-top: 8px;
 }
 
 /* --- FOOTER --- */
@@ -482,9 +474,7 @@ width: calc((100 - 48px)/ 3);
   background: var(--color-primary-text);
   padding-top: 100px;
   padding-bottom: 100px;
-  width: 1400px;
   margin: 0 auto;
-  padding-left: 156px;
 }
 
 .footer-logo {
